@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import sendTokens from "../lib/sendToken";
+import sendTokens from "../../lib/sendToken";
 
 const Index = () => {
   const [transactionResult, setTransactionResult] = useState(null);
