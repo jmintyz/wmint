@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       quantity: 1
     }];
 
-    const protocol = process.env.MODE_ENV === 'developement' ? "http://" : "http://";
+    const protocol = process.env.MODE_ENV === 'developement' ? "https://" : "https://";
     const host = req.headers.host;
     console.log(req.headers.host);
 

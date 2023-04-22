@@ -11,10 +11,10 @@ import { Logo } from "../Logo";
 export const AppLayout = ({ children, availableTokens, mints, postId }) => {
   const { user } = useUser();
   return (
-    <div className="flex flex-col h-screen max-h-screen bg-gradient-to-r from-slate-800 to-cyan-800">
-      <div className="flex items-center justify-between text-white bg-gradient-to-r from-slate-800 to-cyan-800 h-20 px-4">
-        <div className="m-auto w-full max-w-screen-sm w-400px flex items-center justify-between mt-2">
-          <Logo />
+    <div className="flex flex-col h-screen max-h-screen bg-gradient-to-r from-slate-800 to-cyan-800 ">
+    <div className="flex items-center  justify-between text-white bg-gradient-to-r from-slate-800 to-cyan-800 h-20 px-4">
+      <div className="m-auto w-full max-w-screen-sm w-400px flex items-center justify-between mt-2">
+       <Logo />
           <div className="flex items-center">
             
 
