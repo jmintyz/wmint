@@ -13,7 +13,7 @@ export default function Home() {
         <br/> 
         <br/>
       </p>
-      <Link href="/depot" className="btn">Commencer</Link>
+      <Link href="/mint/new" className="btn">Commencer</Link>
                 
       </div>
     </div>
