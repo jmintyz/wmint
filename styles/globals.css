@@ -1,38 +1,52 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a:hover {
+        @apply underline;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading my-6 font-bold;
+    }
+
+    h1 {
+        @apply text-4xl;
+    }
+    h {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply text-xl;
+    }
+    h5 {
+        @apply text-lg;
+    }
+
+    p{
+        @apply my-2;
+    }
+
+    ul, ol {
+        @apply my-4;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    li {
+        @apply my-2;
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+@layer components {
+    .btn {
+        @apply disabled:bg-green-200 disabled:cursor-not-allowed hover:no-underline bg-green-500 tracking-wider w-full text-center text-white font-bold cursor-pointer uppercase px-4 py-2 rounded-md hover:bg-green-600 transition-colors block;
+    }
 }
