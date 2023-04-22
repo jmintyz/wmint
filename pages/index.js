@@ -10,9 +10,9 @@ export default function Home() {
     <div className="relative z-10 text-white px-10 py-5 text-center max-w-screen bg-slate-900/90 rounded-md backrop-blur-sm">
       <Logo /><br/>
       <p>
-        Mintez n importe quel fichier grace à la technologie IFPS et le protocole ERC-721 !<br/> 
-        Choisissez une blockchain et creez votre NFT rapidement et simplement.
-      </p><br/>
+        <br/> 
+        <br/>
+      </p>
       <Link href="/depot" className="btn">Commencer</Link>
                 
       </div>
