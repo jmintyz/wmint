@@ -1,5 +1,5 @@
 import { getSession } from "@auth0/nextjs-auth0"
-import clientPromise from "../../jmint/lib/mongodb";
+import clientPromise from "../lib/mongodb";
 import { ethers } from 'ethers';
 
 
