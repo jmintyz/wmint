@@ -4,7 +4,6 @@ import stripeInit from 'stripe';
 import verifyStripe from '@webdeveducation/next-verify-stripe';
 import clientPromise from "../../../lib/mongodb";
 import React, { useState } from "react";
-import sendTokens from "../../lib/sendToken";
 
 const cors = Cors({
     allowMethods: ['POST', 'HEAD']
@@ -62,7 +61,6 @@ const handler = async (req, res) => {
                 _id: userProfile._id
             });
             console.log(wall);
-            const receipt = await sendTokens();
         }
         default:
             console.log("UNHANDLED EVENT: ", event.type);
